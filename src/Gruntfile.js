@@ -135,11 +135,16 @@ module.exports = function (grunt) {
       dist: {
         files: [{
           dot: true,
+          options: {
+            force: true
+          },
           src: [
             '.tmp',
             '<%= yeoman.dist %>/{,*/}*',
             '!<%= yeoman.dist %>/.git*',
+            '!<%= yeoman.dist %>/.git/*',
             '!<%= yeoman.dist %>/src*',
+            '!<%= yeoman.dist %>/src/*',
             '!<%= yeoman.dist %>/README*'
           ]
         }]
