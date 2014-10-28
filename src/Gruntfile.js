@@ -138,7 +138,9 @@ module.exports = function (grunt) {
           src: [
             '.tmp',
             '<%= yeoman.dist %>/{,*/}*',
-            '!<%= yeoman.dist %>/.git*'
+            '!<%= yeoman.dist %>/.git*',
+            '!<%= yeoman.dist %>/src*',
+            '!<%= yeoman.dist %>/README*'
           ]
         }]
       },
@@ -417,7 +419,7 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('build', [
-    'clean:dist',
+    // 'clean:dist',
     'wiredep',
     'useminPrepare',
     'concurrent:dist',
