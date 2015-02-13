@@ -12,7 +12,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 /* Space out content a bit */
 body {
-  background: #21A355;
+  background: #c7c7c7;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -69,6 +69,35 @@ body {
   }
 }
 
+.langs{
+  float: left;
+  margin: 2px;
+}
+
+/* .listViews {
+  position: relative;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  .education{
+    height: 120px;
+    .element {
+      position: absolute;
+    }
+    .timeFrame{
+
+    }
+    .placeName{
+      right: 0px;
+    }
+    .location{
+      right: 0px;
+      bottom: 0px;
+    }
+  }
+}
+ */
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
