@@ -15,7 +15,7 @@ angular.module('nielResumeApp')
       'Karma'
     ];
 
-    $scope.myTitle = 'Desarrolador Web y Soluciones IT';
+    $scope.myTitle = 'Desarrollo Web y Soluciones IT';
 
     $scope.education = [
     	{
