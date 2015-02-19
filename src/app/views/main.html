@@ -1,29 +1,50 @@
 <div class="jumbotron">
   <h1>Daniel Mendéz</h1>
+  <img src="images/leme.jpg" alt="" class="img-circle profile-pic">
   <p class="lead">
     <br>
     {{myTitle}}
   </p>
-  <a href="http://ve.linkedin.com/in/nieldm">
-    <img src="images/linkedin.png" alt="View Daniel Mendez's profile on LinkedIn">
-  </a>
-  <a href="https://twitter.com/nieldm">
-    <img src="images/twitter.png" alt="Twitter">
-  </a>
-  <a href="https://www.youtube.com/user/ni3ldm">
-    <img src="images/youtube-variation.png" alt="Youtube">
-  </a>
-  <a href="https://github.com/nieldm">
-    <img src="images/github.png" alt="Github">
-  </a>
-  <p>
-    <br>
-    Email: <a href="mailto:nieldm@gmail.com">nieldm@gmail.com</a>
-  </p>
+  <div class="hidden-print">
+    <a href="http://ve.linkedin.com/in/nieldm">
+      <img src="images/linkedin.png" alt="View Daniel Mendez's profile on LinkedIn">
+    </a>
+    <a href="https://twitter.com/nieldm">
+      <img src="images/twitter.png" alt="Twitter">
+    </a>
+    <a href="https://www.youtube.com/user/ni3ldm">
+      <img src="images/youtube-variation.png" alt="Youtube">
+    </a>
+    <a href="https://github.com/nieldm">
+      <img src="images/github.png" alt="Github">
+    </a>
+    <p>
+      <br>
+      Email: <a href="mailto:nieldm@gmail.com">nieldm@gmail.com</a>
+    </p>
+  </div>
 </div>
 
+
 <div class="row marketing">
-  <div class="panel panel-default">
+  <div class="panel panel-default visible-print-block">
+    <div class="panel-heading">
+      <h3 class="panel-title">Datos Personales</h3>
+    </div>
+    <div class="panel-body">
+       <address>
+        <strong>Dirección: </strong><br>
+        Municipio Baruta. La Tahona Calle del Parral<br>
+        Caracas, Miranda<br>
+        <abbr title="Phone">Celular:</abbr> (0424) 273 29 14<br>
+        <strong>Correo Electrónico:</strong> nieldm@gmail.com<br>
+        <strong>Edad:</strong> 26 años
+        <strong>C.V. Web:</strong> http://nieldm.github.io/
+      </address>
+    </div>
+  </div>
+  <!-- <div class="print-break"></div> -->
+  <div class="panel panel-default hidden-print">
     <div class="panel-heading">
       <h3 class="panel-title">Bio</h3>
     </div>
@@ -51,6 +72,7 @@
       </p>
     </div>
   </div>
+  <!-- <div class="print-break"></div> -->
   <div class="panel panel-default">
     <div class="panel-heading">
       <h3 class="panel-title">Educación</h3>
@@ -64,11 +86,10 @@
             <span class="badge">{{edu.time}}</span>
           </h3>
           <p class="list-group-item-text">
-            <h4>{{edu.place}}
-              <small>
+            <strong>
+              {{edu.place}}
+            </strong>
               {{edu.description}}
-              </small>
-            </h4>
           </p>
           <p class="list-group-item-text">
               <small>{{edu.location}}</small>
@@ -78,7 +99,7 @@
       </p>
     </div>
   </div>
-
+  <div class="print-break"></div>
   <div class="panel panel-default">
     <div class="panel-heading">
       <h3 class="panel-title">Trabajos</h3>
@@ -92,11 +113,10 @@
             <span class="badge">{{edu.time}}</span>
           </h3>
           <p class="list-group-item-text">
-            <h4>{{edu.place}}
-              <small>
+            <strong>
+              {{edu.place}}
+            </strong>
               {{edu.description}}
-              </small>
-            </h4>
           </p>
           <p class="list-group-item-text">
               <small>{{edu.location}}</small>
@@ -106,7 +126,7 @@
       </p>
     </div>
   </div>
-
+  <div class="print-break"></div>
   <div class="panel panel-default">
     <div class="panel-heading">
       <h3 class="panel-title">Habilidades</h3>
@@ -114,7 +134,7 @@
     <div class="panel-body">
       <p>
       <ul class="listViews list-group">
-        <div class="list-group-item inactive-link" ng-repeat="edu in skills">
+        <div class="list-group-item inactive-link" ng-repeat="edu in skills" ng-class="{'last-item':$last}">
           <h3 class="list-group-item-heading">
             {{edu.title}}
             <span class="badge">{{edu.amount}}/10</span>
@@ -131,5 +151,4 @@
       </p>
     </div>
   </div>
-
 </div>

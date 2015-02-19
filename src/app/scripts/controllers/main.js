@@ -105,7 +105,7 @@ angular.module('nielResumeApp')
 			time: null,
 			title: 'Aplicaciónes Mobile',
 			langs: ['Swift'],
-			description: 'Con en anuncio del nuevo lenguaje de parte de Apple, despertó mi interes en aprender esta nueva herramient. Desde el 2014 se me asignó un proyecto a realizar para la plataforma IOS y utilicé está oportunidad para ahondar más en el lenguaje.',
+			description: 'Con en anuncio del nuevo lenguaje de parte de Apple, despertó mi interes en aprender esta nueva herramienta. Desde el 2014 se me asignó un proyecto a realizar para la plataforma IOS y utilicé está oportunidad para ahondar más en el lenguaje.',
 			amount: 5
 		},
 		{
@@ -113,7 +113,7 @@ angular.module('nielResumeApp')
 			title: 'Varios',
 			langs: ['Yeoman', 'Android SDK', 'NodeJS', 'Python', 'GO', 'PhaserJS', 'Java', 'ShellScript', 'Photoshop', 'Illustrator', 'Gimp', 'Blender', 'Arduino', 'ElasticSearch'],
 			description: 'Aun cuando no forman parte de mi trabajo diario, me gusta estar al día en lo que pasa en el mundo del desarrollo, aprendiendo nuevos lenguajes y probando diferentes librerías. Por otro lado me gusta aprender a utilizar herramientas de diseño y modelado, aun cuando mi formación en estas es un poco básica.',
-			amount: null
+			amount: 9
 		}
     ];
   });

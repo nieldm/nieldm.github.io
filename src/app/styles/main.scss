@@ -98,6 +98,7 @@ body {
   }
 }
  */
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
@@ -118,5 +119,40 @@ body {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
+  }
+}
+/* Print Mode */
+@media print {
+  .print-break {page-break-after: always;}
+  .print-hide {display: none;}
+  .print-show {
+    display: block;
+  }
+  .panel {
+    border: none;
+    margin-bottom: 0px !important;
+  }
+  .panel-title{
+    font-size: 32px;
+  }
+  .list-group-item{
+    border: none;
+  }
+  .panel-body p{
+    text-align: justify;
+  }
+  .last-item{
+    margin-top: 40px;
+  }
+  .profile-pic{
+    position: absolute;
+    left: 60px;
+    top: 60px;
+    width: 120px;
+  }
+  h1, .lead, h3, strong {
+    /* font-family: 'Lobster', cursive; */
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
   }
 }
