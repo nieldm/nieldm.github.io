@@ -15,7 +15,7 @@ angular.module('nielResumeApp')
       'Karma'
     ];
 
-    $scope.myTitle = 'Desarrollo Web y Soluciones IT';
+    $scope.myTitle = 'Desarrollo Web, Aplicaciones Móviles para iOS y Soluciones IT';
 
     $scope.education = [
     	{
@@ -43,33 +43,50 @@ angular.module('nielResumeApp')
 
     $scope.jobs = [
 		{
+      pos: 5,
 			time: '2009 - 2011',
 			title: 'Analista Programador',
 			description: 'Desarrollo en lenguajes PHP, JS, HTML, CSS y SQL. Utilización de PHP Zend Framework. Administración de Servidores GNU/Linux',
 			place: 'Universidad Nueva Esparta',
-			location: 'Caracas, Venezuela'
+			location: 'Caracas, Venezuela',
+      url: "http://www.une.edu.ve"
 		},
 		{
-			time: '2011 - 2014',
+      pos: 3,
+			time: '2011 - Febrero 2014',
 			title: 'Dir. Desarrollo Tecnológico',
 			description: 'Planificación y Ejecución de nuevos módulos, levantamiento de información acerca de los procesos de la institución, automatización de procesos, dirección de un equipo de trabajo de 5 programadores, mantenimeinto de la plataforma tecnológica y asesoramiento en el área de tecnológias',
 			place: 'Universidad Nueva Esparta',
-			location: 'Caracas, Venezuela'
+			location: 'Caracas, Venezuela',
+      url: "http://www.une.edu.ve"
 		},
 		{
+      pos: 4,
 			time: '2011 - 2012',
 			title: 'Profesor Instructor',
 			description: 'Programación IV: dirigida a la Programación Orientada a Objetos con lenguaje Java y uso del Android SDK. Programación VII: desarrollo de aplicaciones web avanzado, con el uso de lenguaje PHP, CSS y JS, incorporando el uso de librerías y frameworks como Zend y Laravel.',
 			place: 'Universidad Nueva Esparta',
-			location: 'Caracas, Venezuela'
+			location: 'Caracas, Venezuela',
+      url: "http://www.une.edu.ve"
 		},
 		{
-			time: '2015 Actual',
+      pos: 2,
+			time: 'Marzo 2014 - Abril 2015',
 			title: 'Programador Senior',
 			description: 'Lider del equipo de Programación. Utilización de lenguaje PHP, CSS y JS. Uso de Frameworks Laravel y CodeIgniter. Admistración de Servidores y Bases de Datos. Programación del App para IOS en Lenguaje Swift',
 			place: 'OnRecords C.A.',
-			location: 'Caracas, Venezuela'
-		}
+			location: 'Caracas, Venezuela',
+      url: "http://www.onrecords.com/"
+		},
+    {
+      pos: 1,
+      time: 'Abril 2015 - Actual',
+      title: 'Programador de Aplicaciones iOS',
+      description: 'Programación de Aplicaciones para iOS en Lenguaje Swift y Mantenimientos de Aplicaciones iOS en Objective C',
+      place: 'CaracasDesgin.com C.A.',
+      location: 'Caracas, Venezuela',
+      url: "http://www.caracasdesign.com/"
+    }
     ];
 
     $scope.skills = [
@@ -104,8 +121,8 @@ angular.module('nielResumeApp')
 		{
 			time: null,
 			title: 'Aplicaciónes Mobile',
-			langs: ['Swift'],
-			description: 'Con en anuncio del nuevo lenguaje de parte de Apple, despertó mi interes en aprender esta nueva herramienta. Desde el 2014 se me asignó un proyecto a realizar para la plataforma IOS y utilicé está oportunidad para ahondar más en el lenguaje.',
+			langs: ['Swift', 'Objective C'],
+			description: 'Con en anuncio del nuevo lenguaje de parte de Apple, despertó mi interes en aprender esta nueva herramienta. Desde el 2014 se me asignó un proyecto a realizar para la plataforma IOS y utilicé está oportunidad para ahondar más en el lenguaje. Me he enfocado en mejorar mi dominio en el lenguaje Swift y su entorno. Debido a que la mayoría de la dicumentación esta escrita en Objective C, he aprendido de este lenguaje, su funcionamiento y mejores practicas aplicadas por empresas como Apple y Facebook en sus diferentes aplicaciones',
 			amount: 5
 		},
 		{

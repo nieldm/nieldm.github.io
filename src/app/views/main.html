@@ -22,7 +22,7 @@
       <br>
       Email: <a href="mailto:nieldm@gmail.com">nieldm@gmail.com</a>
       <br>
-      Nacionalidad: Venezolana<img class="flags" src="images/Venezuela.png" alt="VenezuelaFlagPic"> Española<img class="flags" src="images/Spain.png" alt="SpainFlagPic">
+      Nacionalidad: Venezolana<img class="flags" src="/images/Venezuela.png" alt="VenezuelaFlagPic"> Española<img class="flags" src="/images/Spain.png" alt="SpainFlagPic">
     </p>
   </div>
 </div>
@@ -110,14 +110,14 @@
     <div class="panel-body">
       <p>
       <ul class="listViews list-group">
-        <div class="list-group-item inactive-link" ng-repeat="edu in jobs">
+        <div class="list-group-item inactive-link" ng-repeat="edu in jobs | orderBy:'pos'">
           <h3 class="list-group-item-heading">
             {{edu.title}}
             <span class="badge">{{edu.time}}</span>
           </h3>
           <p class="list-group-item-text">
             <strong>
-              {{edu.place}}
+              <a ng-href="{{edu.url}}">{{edu.place}}</a>
             </strong>
               {{edu.description}}
           </p>

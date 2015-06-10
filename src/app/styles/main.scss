@@ -126,6 +126,14 @@ body {
 }
 /* Print Mode */
 @media print {
+  .jumbotron p{
+    margin-top: 50px;
+  }
+
+  .jumbotron{
+    margin-bottom: -30px !important;
+  }
+
   .print-break {page-break-after: always;}
   .print-hide {display: none;}
   .print-show {
